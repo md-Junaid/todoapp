@@ -1,0 +1,25 @@
+[
+	{
+		"username": "Travis",
+		"password": "password",
+		"email": "Travis@gmail.com",
+		"tasks": [
+			{
+				"task": "Walking the dog!!"
+			},
+			{
+				"task": "Buy eggs from the store!!"
+			}
+		]
+	},
+	{
+		"username": "Peter Griffin",
+		"password": "password",
+		"email": "peter@gmail.com",
+		"tasks": [
+			{
+				"task": "Attend meeting at 3 p.m"
+			}
+		]
+	}
+]
