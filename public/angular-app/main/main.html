@@ -1,9 +1,14 @@
-<div class="jumbotron" id="jumbotron">
+<p>&nbsp</p>
+<p>&nbsp</p>
+<p>&nbsp</p>
+<p>&nbsp</p>
+
+<div ng-controller="LoginController as vm" class="jumbotron shadow-box" id="jumbotron">
 	<div class="container">
 		<h2 class="welcome">Welcome to Clevero Task Management App.</h2>
 		<h3>This app was developed during the Full Stack Hiring Competition.</h3>
-		<h3>Please Login or register in order to use the todo task management app.</h3>
-		<p>&nbsp</p>
-		<button class="btn btn-lg btn-primary">Login</button>
+		<h3 ng-if="!vm.isLoggedIn()">Please Login or register in order to use the todo task management app.</h3>
+		<p>If you like this web app, you can fork it on <a href="https://github.com/md-Junaid/todoapp" style="text-decoration: none;">github</a>.</p>
+		<button ng-if="!vm.isLoggedIn()" class="btn btn-lg btn-primary">Login</button>
 	</div>
 </div>

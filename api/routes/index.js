@@ -4,13 +4,13 @@ var express 	= require('express'),
 	ctrlUsers	= require('../controllers/users.controllers.js');
 
 router
-	.route('/users/:userId/tasks')
+	.route('/users/tasks')
 	.get(ctrlUsers.authenticate, ctrlTasks.tasksGetAll)
 	.post(ctrlTasks.tasksAddOne);
 
 router
-	.route('/users/:userId/tasks/:taskId')
-	.get(ctrlTasks.tasksGetOne)
+	.route('/users/tasks/:taskId')
+	// .get(ctrlTasks.tasksGetOne)
 	.put(ctrlTasks.tasksUpdateOne)
 	.delete(ctrlTasks.tasksDeleteOne);
 

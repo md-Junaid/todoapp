@@ -1,5 +1,6 @@
 var mongoose	 = require('mongoose'),
 	dburl		 = 'mongodb://junaid:password123@ds059546.mlab.com:59546/todo-app';
+	// dburl		 = 'mongodb://localhost:27017/todos';
 
 mongoose.connect(dburl);
 

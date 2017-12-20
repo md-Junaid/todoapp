@@ -26,6 +26,7 @@ function LoginController($http, $location, $window, AuthFactory, jwtHelper) {
 					var token = $window.sessionStorage.token;
 					var decodedToken = jwtHelper.decodeToken(token);
 					vm.loggedInUser = decodedToken.username;
+					$location.path('/profile');
 				}
 			}).catch(function(error) {
 				console.log(error);
